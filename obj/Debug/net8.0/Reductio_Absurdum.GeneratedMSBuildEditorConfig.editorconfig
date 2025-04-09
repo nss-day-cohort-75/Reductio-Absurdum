@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Reductio_Absurdum
-build_property.ProjectDir = C:\Users\adelu\workspace\Reductio_Absurdum\Reductio-Absurdum\
+build_property.ProjectDir = C:\Users\16157\workspace\csharp\Reductio_Absurdum\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
