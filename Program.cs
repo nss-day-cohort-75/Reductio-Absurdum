@@ -81,6 +81,9 @@ while (option != "0")
 
         PickCategory();
     }
+    else if (option == "3") {
+        AddProduct();
+    }
 
 
 }
@@ -115,6 +118,60 @@ void PickCategory()
     // display the ones that match
     foreach (Product type in selectedType)
         Console.WriteLine(type.Name);
+}
+
+void AddProduct() 
+{
+    Console.WriteLine("Enter name of Product");
+    string Name = Console.ReadLine();
+
+    Console.WriteLine("Enter cost of price with decimal");
+    string Price = Console.ReadLine();
+    decimal priceInput =  0;
+    try 
+    {
+        priceInput = decimal.Parse(Price);
+    }
+     catch {
+        Console.WriteLine("Enter a price with a decimal");
+        return;
+     }
+    
+    Console.WriteLine("Is product avaiable? (true/false)");
+    string Avaiable = Console.ReadLine();
+    bool Avaiablity = false;
+    if(Avaiable == "true") {
+        Avaiablity = true;
+    }
+    else if (Avaiable == "false") {
+        Avaiablity = false;
+    }
+
+    Console.WriteLine("Enter Date format (yyyy/m/d)");
+    string DaysOnShelf = Console.ReadLine();
+    DateTime  shelfDate;
+    try {
+        shelfDate = DateTime.Parse(DaysOnShelf);
+    }
+    catch {
+        Console.WriteLine("Please write date (yyyy/m/d)");
+        return;
+    }
+
+
+    Console.WriteLine("Enter a category");
+    CategoryList();
+    string productTypeId = Console.ReadLine();
+
+    Product newProduct = new Product() {
+        Name = Name,
+        Price = priceInput,
+        Avaiable = Avaiablity,
+        DaysOnShelf = shelfDate,
+        ProductTypeId = productTypeId
+    };
+    products.Add(newProduct);
+
 }
 
 
