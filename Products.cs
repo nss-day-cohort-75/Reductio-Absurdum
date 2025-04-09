@@ -1,27 +1,35 @@
-public class Product { 
-    public string Name {
+public class Product
+{
+    public string Name
+    {
         get; set;
     }
-    public decimal Price {
+    public decimal Price
+    {
         get; set;
     }
-    public bool Avaiable {
+    public bool Avaiable
+    {
         get; set;
     }
-    public DateTime DaysOnShelf {
+    public DateTime DaysOnShelf
+    {
         get; set;
     }
-    public int  ProductTypeId {
+    public string ProductTypeId
+    {
         get; set;
     }
 }
 
-public class ProductType {
-    public int Id {
+public class ProductType
+{
+    public int Id
+    {
         get; set;
     }
-    public string Name {
+    public string Name
+    {
         get; set;
     }
 }
-   

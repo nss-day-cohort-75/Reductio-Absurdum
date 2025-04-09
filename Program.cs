@@ -1,11 +1,13 @@
-﻿List<Product> products = new List<Product> () {
-     
+﻿using System.Runtime.InteropServices;
+
+List<Product> products = new List<Product>() {
+
      new Product() {
         Name = "Magic Wand",
         Price = 20.00M,
         Avaiable = false,
         DaysOnShelf = new DateTime( 2015, 3, 15),
-        ProductTypeId = 1
+        ProductTypeId = "1"
      },
 
      new Product() {
@@ -13,7 +15,7 @@
         Price = 30.00M,
         Avaiable = true,
         DaysOnShelf = new DateTime ( 1980, 4, 13),
-        ProductTypeId = 2
+        ProductTypeId = "2"
      },
 
      new Product() {
@@ -21,7 +23,7 @@
         Price = 50.00M,
         Avaiable = true,
         DaysOnShelf= new DateTime ( 1800, 7, 7),
-        ProductTypeId = 3
+        ProductTypeId = "3"
      },
 
      new Product() {
@@ -29,7 +31,7 @@
         Price = 100.00M,
         Avaiable = true,
         DaysOnShelf = new DateTime ( 1400, 4, 13),
-        ProductTypeId = 4
+        ProductTypeId = "4"
      }
 };
 
@@ -57,22 +59,62 @@ List<ProductType> productTypes = new List<ProductType>() {
 };
 
 string option = null;
-while(option != "0")
+while (option != "0")
+{
 
-Console.WriteLine(@"1.View all products
+
+
+    Console.WriteLine(@"1.View all products
                      2.Select a category
                      3.Add a product
                      4.Delete a product
                      5.Update a product");
-option = Console.ReadLine();
-if(option == "1") {
-    ProductList();
+    option = Console.ReadLine();
+    if (option == "1")
+    {
+        ProductList();
+    }
+    else if (option == "2")
+    {
+        Console.WriteLine($"Pick a Category");
+        CategoryList();
+
+        PickCategory();
+    }
+
+
+}
+void ProductList()
+{
+    List<Product> items = products.Select(item => item).ToList();
+    foreach (Product product in products)
+    {
+        Console.WriteLine(product.Name);
+    }
+
+}
+
+void CategoryList()
+{
+    List<ProductType> productCategory = productTypes.Select(category => category).ToList();
+    foreach (ProductType product in productTypes)
+    {
+        // this list our categories
+        Console.WriteLine(product.Id + ". " + product.Name);
+    }
+}
+
+void PickCategory()
+//where trying to get to pick a category and display the matching product
+{
+    string selectedTypeId = Console.ReadLine();
+
+    // get all the products with the id selected
+    List<Product> selectedType = products.Where(p => p.ProductTypeId == selectedTypeId).ToList();
+
+    // display the ones that match
+    foreach (Product type in selectedType)
+        Console.WriteLine(type.Name);
 }
 
 
-void ProductList() {
-    List<Product> =>
-    Product.Select(item => item.ToList())
-        foreach (string Product in products)
-
-}

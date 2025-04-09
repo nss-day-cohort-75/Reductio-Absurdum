@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\16157\\.nuget\\packages\\": {}
+    "C:\\Users\\adelu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\16157\\workspace\\csharp\\Reductio_Absurdum\\Reductio_Absurdum.csproj",
+      "projectUniqueName": "C:\\Users\\adelu\\workspace\\Reductio_Absurdum\\Reductio-Absurdum\\Reductio_Absurdum.csproj",
       "projectName": "Reductio_Absurdum",
-      "projectPath": "C:\\Users\\16157\\workspace\\csharp\\Reductio_Absurdum\\Reductio_Absurdum.csproj",
-      "packagesPath": "C:\\Users\\16157\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\16157\\workspace\\csharp\\Reductio_Absurdum\\obj\\",
+      "projectPath": "C:\\Users\\adelu\\workspace\\Reductio_Absurdum\\Reductio-Absurdum\\Reductio_Absurdum.csproj",
+      "packagesPath": "C:\\Users\\adelu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adelu\\workspace\\Reductio_Absurdum\\Reductio-Absurdum\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\16157\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\adelu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
