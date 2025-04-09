@@ -81,8 +81,13 @@ while (option != "0")
 
         PickCategory();
     }
-    else if (option == "3") {
+    else if (option == "3")
+    {
         AddProduct();
+    }
+    else if (option == "4")
+    {
+        DeleteProduct();
     }
 
 
@@ -120,40 +125,45 @@ void PickCategory()
         Console.WriteLine(type.Name);
 }
 
-void AddProduct() 
+void AddProduct()
 {
     Console.WriteLine("Enter name of Product");
     string Name = Console.ReadLine();
 
     Console.WriteLine("Enter cost of price with decimal");
     string Price = Console.ReadLine();
-    decimal priceInput =  0;
-    try 
+    decimal priceInput = 0;
+    try
     {
         priceInput = decimal.Parse(Price);
     }
-     catch {
+    catch
+    {
         Console.WriteLine("Enter a price with a decimal");
         return;
-     }
-    
+    }
+
     Console.WriteLine("Is product avaiable? (true/false)");
     string Avaiable = Console.ReadLine();
     bool Avaiablity = false;
-    if(Avaiable == "true") {
+    if (Avaiable == "true")
+    {
         Avaiablity = true;
     }
-    else if (Avaiable == "false") {
+    else if (Avaiable == "false")
+    {
         Avaiablity = false;
     }
 
     Console.WriteLine("Enter Date format (yyyy/m/d)");
     string DaysOnShelf = Console.ReadLine();
-    DateTime  shelfDate;
-    try {
+    DateTime shelfDate;
+    try
+    {
         shelfDate = DateTime.Parse(DaysOnShelf);
     }
-    catch {
+    catch
+    {
         Console.WriteLine("Please write date (yyyy/m/d)");
         return;
     }
@@ -163,7 +173,8 @@ void AddProduct()
     CategoryList();
     string productTypeId = Console.ReadLine();
 
-    Product newProduct = new Product() {
+    Product newProduct = new Product()
+    {
         Name = Name,
         Price = priceInput,
         Avaiable = Avaiablity,
@@ -174,4 +185,20 @@ void AddProduct()
 
 }
 
+void DeleteProduct()
+{
+    Console.WriteLine($"These are your products to pick from");
+    ProductList();
 
+    string userInput = Console.ReadLine();
+
+    foreach (Product product in products.ToList())
+        if (userInput == product.Name)
+        {
+
+            products.Remove(product);
+        }
+    Console.WriteLine("You deleted the product successfully");
+
+
+}
