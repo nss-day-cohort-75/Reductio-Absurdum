@@ -1,0 +1,15 @@
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\bin\Debug\net8.0\Reductio_Absurdum.exe
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\bin\Debug\net8.0\Reductio_Absurdum.deps.json
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\bin\Debug\net8.0\Reductio_Absurdum.runtimeconfig.json
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\bin\Debug\net8.0\Reductio_Absurdum.dll
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\bin\Debug\net8.0\Reductio_Absurdum.pdb
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\Reductio_Absurdum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\Reductio_Absurdum.AssemblyInfoInputs.cache
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\Reductio_Absurdum.AssemblyInfo.cs
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\Reductio_Absurdum.csproj.CoreCompileInputs.cache
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\Reductio_Absurdum.sourcelink.json
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\Reductio_Absurdum.dll
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\refint\Reductio_Absurdum.dll
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\Reductio_Absurdum.pdb
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\Reductio_Absurdum.genruntimeconfig.cache
+C:\Users\16157\workspace\csharp\Reductio_Absurdum\obj\Debug\net8.0\ref\Reductio_Absurdum.dll

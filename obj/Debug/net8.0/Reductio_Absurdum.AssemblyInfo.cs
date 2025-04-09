@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Reductio_Absurdum")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a162b873b31e4cb50cc503c27ed11157440c372e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22a9e758a857b425f7ca7dce5ba0acf7f6a0fc40")]
 [assembly: System.Reflection.AssemblyProductAttribute("Reductio_Absurdum")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Reductio_Absurdum")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
