@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Dynamic;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 List<Product> products = new List<Product>() {
 
@@ -88,6 +90,10 @@ while (option != "0")
     else if (option == "4")
     {
         DeleteProduct();
+    }
+    else if (option =="5") {
+
+        UpdateProduct();
     }
 
 
@@ -202,3 +208,65 @@ void DeleteProduct()
 
 
 }
+
+void UpdateProduct() 
+{
+    Console.WriteLine($"Pick the product you want to update");
+    ProductList();
+
+    string updateInput = Console.ReadLine();
+
+    Product updatedProduct = null;
+
+    foreach(Product product in products)
+    if (updateInput == product.Name) 
+    {
+        updatedProduct = product;
+    }
+    
+    Console.WriteLine("Enter new name of Product");
+    string newName = Console.ReadLine();
+
+    Console.WriteLine("Enter new cost of price with decimal");
+    string newPrice = Console.ReadLine();
+    decimal priceInput = decimal.Parse(newPrice);
+    
+    Console.WriteLine("Is product avaiable? (true/false)");
+    string newAvaiable = Console.ReadLine();
+    bool Avaiablity = false;
+    if (newAvaiable == "true")
+    {
+        Avaiablity = true;
+    }
+    else if (newAvaiable == "false")
+    {
+        Avaiablity = false;
+    }
+
+    Console.WriteLine("Enter new Date format (yyyy/m/d)");
+    string newDaysOnShelf = Console.ReadLine();
+    DateTime shelfDate;
+    try
+    {
+        shelfDate = DateTime.Parse(newDaysOnShelf);
+    }
+    catch
+    {
+        Console.WriteLine("Please write date (yyyy/m/d)");
+        return;
+    }
+
+        Console.WriteLine("Enter new a category");
+    CategoryList();
+    string productTypeId = Console.ReadLine();
+
+    
+    
+        updatedProduct.Name = newName;
+        updatedProduct.Price = priceInput;
+        updatedProduct.Avaiable = Avaiablity;
+        updatedProduct.DaysOnShelf = shelfDate;
+        updatedProduct.ProductTypeId = productTypeId;
+    
+  
+};
